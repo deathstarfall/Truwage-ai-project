@@ -27,7 +27,7 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path("indic_skill_100")
+ROOT = Path(__file__).resolve().parent / "indic_skill_100"
 RAW = ROOT / "raw"
 VID = ROOT / "video_15fps"
 AUD = ROOT / "audio"
@@ -146,7 +146,7 @@ def from_pixabay(task, query, need):
 
 
 
-UA = {"User-Agent": "IndicSkill100/0.1 (research dataset; contact: ayanshmanan2007@gmail.com)"}
+UA = {"User-Agent": "IndicSkill100/0.1 (research dataset; contact: your-email@example.com)"}
 OPEN_MAX_SECONDS = 60
 OPEN_MAX_BYTES = 60 * 1024 * 1024
 VIDEO_EXTS = {".mp4", ".webm", ".ogv", ".mkv", ".mov"}
